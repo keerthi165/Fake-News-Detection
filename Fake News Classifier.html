@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reality Check</title>
+    <style>
+       body{
+        background-image: url('https://st.depositphotos.com/1411161/1378/v/950/depositphotos_13782745-stock-illustration-newsprint-background.jpg')
+       }
+       #content{
+        background-image : url('https://www.infinityfamilycare.com/wp-content/uploads/2015/11/white-parchment-paper-texture-1-1024x575.jpg');
+        border-radius: 30px;
+        border : 3px solid white;
+        height:  400px;
+        width : 750px;
+        margin: 150px 500px 300px 500px;
+       }
+       #title{
+       margin-top: 0px;
+       margin-left: 100px;
+         width: 1550px;
+         height:100px;
+         background-image: url('https://www.infinityfamilycare.com/wp-content/uploads/2015/11/white-parchment-paper-texture-1-1024x575.jpg');
+       }
+       #text{
+         height: 150px;
+         width: 500px;
+         margin-left: 100px;
+         margin-right:80px;
+       }
+       #im{
+        margin: 10px 300px 10px 100px;
+        height: 30px;
+       }
+</style>
+</head>
+<body>
+   <div id="title">
+    <h1 style="padding:20px;margin-left:470px;font-family:Courier New;font-size:70px;"> REALITY CHECK!</h1>
+   </div>
+   <div id="content">
+ <form method="POST" action="{{url_for('result')}}">
+     <h1 style="margin-left: 100px; margin-right: 50px;margin-top:60px;font-family:Courier New;">Enter Text:</h1>
+ 	<input id = "text" type="textarea" name = "article">
+   <br>
+     <input type ="submit" value="Detect" style="border-radius: 15px;margin-top: 50px;margin-left:300px;height:40px; width:100px;background-image:url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhMVFRUVFRgVFRUXFRUVFxUVFRgYFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAABAAIDBAf/xAAgEAEBAQACAgMBAQEAAAAAAAAAAREC8BKhkbHBgdHh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APrp0YYDRZINCKEFFBCBnfRZh0CmbVKBTOtAmbFqoLFIlO+gaA0AWdVGgGaazoCwYrQCv4zWqgZjONAGU1RgMs2NKgwmkD2wwNQEUr32B79rUoCXfRGd/gLUr/ooKhIDFaNFoFDVv4DWrWYgOhMgrWbWmaAtEq1AqhVgIHEDKpFAUYRgBU2KgxU1YgeyFmHQKEMAkUgikArN/WrWaCA1WgdFGjQJYt78kGtVrOnALLTIKs8qaLQZBQIoaBwUqAzqaxeIMJvxWA50414rAZwN4gdYUgMpl78MmA1SodAd9nv2loKs2NUUGKK1WbAZDWCgLe/JlCA6tGkDKCNAX9ZrYoMErAGGRSNSAzOJkbkWAzi8ThwBOIsbxrAcvFeLp4qwHNN2AGpFnfki3vyCw4tMBSExAOQioBrRRaAVZprNBCwigBFEBkKpgLBhVBYK0sBlY1hwGcOGRrAHHirGpEA8TOLSkBnDhGALUcQBEgxKOU78syt0GZyalYwyA6SnWYdAUK0WgqO/RHfoGdBooKBIFn4D/wA/FIBpiQI1YsAxqCT8MgJSKHAGNLDgJNGQBIsaiBnA6YpAYkGNoGcTSB5I1rErQGVYtQG99q0ACoEBUQvfYJloALGW2aCUWIGlFGoCOIglIt78LQUa1iNSg1q0UA6SmOcplB0MZ41qA1iQ0BRqGAUZEDxNYzGgKCgGMnVAWI4qC1EALUaMBnFnfhoAKp300J30Cn+FT/FAJgQHv0oO/SA6osIGEcSAMUa4wFGmcIHToiAmRnVKDpExOSB440zjYCIxSAFDeJnEFhxYZAGLGhIDNZrdjNAA2ADEIgKxKAoYoYCnfSUIHEpDgKIQyAZDBxQGd9JcSCtHkqzgHVFDAUQIODUZ+WoC0RoAtIhgExEAocUgMsV076ZsBiiNUAsFLINJIFhhkMgCRpYQUjUEhAWKQ4gQIBoWq1kDaFUBSAFGRA5SGQ4ZPwGVjSBkw4QBihgKGDFO+gWd/gsasFgOdjOOljOAzgxvFeICQ4ZxOAJGpO/04c7/AEBixrDgMQtSIGRa2yAGtcnMDqEIJJAlCoBkRlQDDgQLxWJAsOBA1ikCAyKTvwkBw2JAxYLEgXivFIDixICYkBpxIFFSgZoxIByc0gSKAIoEtSAeRSB//9k=')">
+   </div>
+     <br>
+ </form>
+</body>
+</html>
